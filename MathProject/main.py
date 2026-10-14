@@ -2,7 +2,6 @@ import numpy as np
 
 
 def scale(facts: list[int]) -> float:
-    """Separación promedio entre años: ancho del kernel."""
     return (max(facts) - min(facts)) / (len(facts) - 1)
 
 
@@ -36,7 +35,6 @@ def interpolation(x: float, facts: list[int], weights: list[float]) -> float:
 
 
 def ajuste_exponencial(facts: list[int], poblacion: list[float]):
-    """Curva de referencia: P(t) = a * e^(b * (t - t0)). Devuelve (a, b, R2, t0)."""
     t0 = facts[0]
     t = np.array(facts, dtype=float) - t0
     p = np.array(poblacion, dtype=float)
