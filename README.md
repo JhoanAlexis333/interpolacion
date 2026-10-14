@@ -1,5 +1,7 @@
 # MathProject: crecimiento de la población con RBF
 
+Integrantes: JHOAN ALEXIS DAVID - CRISTIAN URRESTI
+
 Estima la población de un año **dentro del rango de los datos conocidos** usando
 interpolación con una **función de base radial (RBF)** de tipo *multicuadrática
 inversa*, y la compara con un ajuste exponencial de referencia. Incluye una
